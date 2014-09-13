@@ -15,7 +15,6 @@ for(var i = 0; i < num; i++)
 	dotts[i] = {x:mouseX,  y:mouseY, 
 		    velX:0, velY:0, 
 		    size:((i/num)*10)+10};
-		    //color:("rgb("+(((1-i)/num)*255)+","+(((1-i)/num)*255)+","+(((1-i)/num)*255)+")")};
 }
 function draw()
 {
@@ -23,7 +22,6 @@ function draw()
 	for(var i = 0; i < dotts.length; i++)
 	{
 		var dott = dotts[i];
-		//context.fillStyle = dott.color;
 		context.fillRect(dott.x, dott.y, dott.size, dott.size);
 		dott.x += dott.velX*dott.size;
 		dott.y += dott.velY*dott.size;
