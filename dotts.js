@@ -1,39 +1,29 @@
-"use strict";
-var a_canvas = document.getElementById("a");
-var context = a_canvas.getContext("2d");
+var context = document.getElementById("a").getContext("2d");
 context.canvas.width = window.innerWidth-20;
 context.canvas.height = window.innerHeight-20;
 setInterval(draw, 25);
 window.onmousemove = mouseMoveHandler;
 var mouseDown = false;
-var num = 5000;
+var num = 10000;
 var dotts = [];
 var mouseX = 500;
 var mouseY = 500;
-for(var i = 0; i < num; i++)
-{
-	dotts[i] = {x:mouseX,  y:mouseY, 
-		    velX:0, velY:0, 
-		    size:((i/num)*10)+10};
+for(var i = 0; i < num; i++) {
+	dotts[i] = {x:mouseX,  y:mouseY, velX:0, velY:0, size:(((i/num)*10)+10)*.002};
 }
-function draw()
-{
+function draw() {
 	context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-	for(var i = 0; i < dotts.length; i++)
-	{
+	for(var i = 0; i < dotts.length; i++) {
 		var dott = dotts[i];
-		context.fillRect(dott.x, dott.y, dott.size, dott.size);
+		context.fillRect(dott.x, dott.y, dott.size*500, dott.size*500);
 		dott.x += dott.velX*dott.size;
 		dott.y += dott.velY*dott.size;
-		dott.velX += (mouseX-dott.x)*.002;
-		dott.velY += (mouseY-dott.y)*.002; 
+		dott.velX += mouseX-dott.x;
+		dott.velY += mouseY-dott.y; 
 	}
 }
-
-function mouseMoveHandler(event)
-{
-	if(mouseDown)
-	{
+function mouseMoveHandler(event) {
+	if(mouseDown) {
 		mouseX = event.clientX;
 		mouseY = event.clientY;
 	}
