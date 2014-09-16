@@ -14,19 +14,19 @@ for(var i = 0; i < num; i++)
 {
 	dotts[i] = {x:mouseX,  y:mouseY, 
 		    velX:0, velY:0, 
-		    size:((i/num)*10)+10};
+		    size:((i/num)*10)+10,
+		    sizeRatio:(((i/num)*10)+10)/500};
 }
 function draw()
 {
 	context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 	for(var i = 0; i < dotts.length; i++)
 	{
-		var dott = dotts[i];
-		context.fillRect(dott.x, dott.y, dott.size, dott.size);
-		dott.x += dott.velX*dott.size;
-		dott.y += dott.velY*dott.size;
-		dott.velX += (mouseX-dott.x)*.002;
-		dott.velY += (mouseY-dott.y)*.002; 
+		context.fillRect(dotts[i].x, dotts[i].y, dotts[i].size, dotts[i].size);
+		dotts[i].x += dotts[i].velX*dotts[i].sizeRatio;
+		dotts[i].y += dotts[i].velY*dotts[i].sizeRatio;
+		dotts[i].velX += mouseX-dotts[i].x;
+		dotts[i].velY += mouseY-dotts[i].y; 
 	}
 }
 
