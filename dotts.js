@@ -1,24 +1,14 @@
 "use strict";
-var a_canvas = document.getElementById("a");
-var context = a_canvas.getContext("2d");
+var context = document.getElementById("a").getContext("2d");
 context.canvas.width = window.innerWidth-20;
 context.canvas.height = window.innerHeight-20;
 setInterval(draw, 25);
 window.onmousemove = mouseMoveHandler;
-var mouseDown = false;
-var num = 5000;
-var dotts = [];
-var mouseX = 500;
-var mouseY = 500;
-for(var i = 0; i < num; i++)
-{
-	dotts[i] = {x:mouseX,  y:mouseY, 
-		    velX:0, velY:0, 
-		    size:((i/num)*10)+10,
-		    sizeRatio:(((i/num)*10)+10)/500};
+var num = 5000, dotts = [], mouseX = 500, mouseY = 500, mouseDown = false;
+for(var i = 0; i < num; i++) {
+	dotts[i] = {x:mouseX,  y:mouseY, velX:0, velY:0, size:((i/num)*10)+10, sizeRatio:(((i/num)*10)+10)/500};
 }
-function draw()
-{
+function draw() {
 	context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 	for(var i = 0; i < dotts.length; i++)
 	{
@@ -29,11 +19,8 @@ function draw()
 		dotts[i].velY += mouseY-dotts[i].y; 
 	}
 }
-
-function mouseMoveHandler(event)
-{
-	if(mouseDown)
-	{
+function mouseMoveHandler(event) {
+	if(mouseDown) {
 		mouseX = event.clientX;
 		mouseY = event.clientY;
 	}
