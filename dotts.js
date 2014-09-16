@@ -1,7 +1,7 @@
 "use strict";
 var context = document.getElementById("a").getContext("2d");
-context.canvas.width = window.innerWidth-20;
-context.canvas.height = window.innerHeight-20;
+context.canvas.width = window.innerWidth;
+context.canvas.height = window.innerHeight;
 setInterval(draw, 25);
 window.onmousemove = mouseMoveHandler;
 var num = 5000, dotts = [], mouseX = 500, mouseY = 500, mouseDown = false;
