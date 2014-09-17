@@ -24,12 +24,14 @@ function draw()
 	context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 	for(var i = 0; i < dotts.length; i++)
 	{
-		context.fillRect(dotts[i].x, dotts[i].y, dotts[i].size, dotts[i].size);
-		dotts[i].x += dotts[i].velX*dotts[i].sizeRatio;
-		dotts[i].y += dotts[i].velY*dotts[i].sizeRatio;
-		dotts[i].velX += mouseX-dotts[i].x;
-		dotts[i].velY += mouseY-dotts[i].y; 
+		var dott = dotts[i];
+		context.fillRect(dott.x, dott.y, dott.size, dott.size);
+		dott.x += dott.velX*dott.sizeRatio;
+		dott.y += dott.velY*dott.sizeRatio;
+		dott.velX += mouseX-dott.x;
+		dott.velY += mouseY-dott.y; 
 	}
+	encoder.addFrame(context);
 }
 
 function mouseMoveHandler(event)
