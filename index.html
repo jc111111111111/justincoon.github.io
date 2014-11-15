@@ -1,724 +1,538 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Homepage</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/linecons.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
 
-<link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Justin Coon</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(e) {
-        $('.res-nav_click').click(function(){
-		$('ul.toggle').slideToggle(600)	
-			});	
-			
-	$(document).ready(function() {
-$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header_outer').addClass('fixed');
-         }
-         else {
-             $('#header_outer').removeClass('fixed');
-         }
-    });
-	
-	  });
-	  
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" >
 
-		    });	
-function resizeText() {
-	var preferredWidth = 767;
-	var displayWidth = window.innerWidth;
-	var percentage = displayWidth / preferredWidth;
-	var fontsizetitle = 25;
-	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-	$(".divclass").css("font-size", newFontSizeTitle)
-}
-</script>
 </head>
+
 <body>
 
-<!--Header_section-->
-<header id="header_outer">
-  <div class="container">
-    <div class="header_section">
-      <div class="logo"><a href="javascript:void(0)"><img src="img/logob.png" alt=""></a></div>
-      <nav class="nav" id="nav">
-        <ul class="toggle">
-          <li><a href="#top_content">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#work_outer">Work</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#client_outer">Clients</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul class="">
-          <li><a href="#top_content">Home</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#work_outer">Work</a></li>
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#client_outer">Clients</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
-  </div>
-</header>
-<!--Header_section--> 
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-<!--Top_content-->
-<section id="top_content" class="top_cont_outer">
-  <div class="top_cont_inner">
-    <div class="container">
-      <div class="top_content">
-        <div class="row">
-          <div class="col-lg-5 col-sm-7">
-            <div class="top_left_cont flipInY wow animated">
-              <h3>Colourful &amp; sexy!</h3>
-              <h2>creating websites that
-                make you stop &amp; stare</h2>
-              <p> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
-              <a href="#service" class="learn_more2">Learn more</a> </div>
-          </div>
-          <div class="col-lg-7 col-sm-5"> </div>
-        </div>
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+	         <li><a class="smoothscroll" href="docs/justin-coon-resume.pdf" target="_blank">Resume</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Justin Coon.</h1>
+            <h3>Start scrolling to learn more about me.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://github.com/justincoon" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!--Top_content--> 
 
-<!--Service-->
-<section  id="service">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="service_area">
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#styles"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+   <!-- Style Guide Section
+   ================================================== -->
+   <section id="styles" style="padding: 90px 0 72px; background: #fff;">
+
+      <div class="row add-bottom">
+
+         <div class="twelve columns">
+
+            <h1>Style Demo.</h1>
+
+            <p class="lead add-bottom">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+            </p>
+
+            <hr>
+
+         </div>
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="six columns add-bottom">
+
+            <h3>Paragraph and Image</h3>
+
+            <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
+  			   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+  			   Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   posuere nunc justo tempus leo. </p>
+
+            <p>A <a href="#">link</a>,
+  			   <abbr title="this really isn't a very good description">abbrebation</abbr>,
+  			   <strong>strong text</strong>,
+            <em>em text</em>,
+  			   <del>deleted text</del>, and
+            <mark>this is a mark text.</mark>
+          	</p>
+
+         </div>
+
+         <div class="six columns add-bottom">
+
+            <h3>Drop Caps</h3>
+
+            <p class="drop-cap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. A small river named Duden flows by their place and supplies
+            it with the necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   </p>
+
+            <h3>Small Print</h3>
+
+            <p>Buy one widget, get one free!
+  				<small>(While supplies last. Offer expires on the vernal equinox. Not valid in Ohio.)</small>
+  			   </p>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="six columns add-bottom">
+
+            <h3>Pull Quotes</h3>
+
+            <aside class="pull-quote">
+    			   <blockquote>
+    				   <p>It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic life One day however a small line of blind text by the name
+                  of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+    				</blockquote>
+    			</aside>
+
+         </div>
+
+         <div class="six columns add-bottom">
+
+            <h3>Block Quotes</h3>
+
+            <blockquote cite="http://where-i-got-my-info-from.com">
+   			   <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+               to do what you believe is great work. And the only way to do great work is to love what you do.
+               If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+               </p>
+   				<cite>
+   				   <a href="#">Steve Jobs</a>
+   				</cite>
+			   </blockquote>
+
+            <blockquote>
+               <p>Good design is as little design as possible.</p>
+               <cite>Dieter Rams</cite>
+            </blockquote>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="eight columns add-bottom">
+
+            <h3 class="add-bottom">Definition Lists</h3>
+
+            <h5>a) Multi-line Definitions (default)</h5>
+
+            <dl>
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd>And it gets a definition too, which is this line</dd>
+				      <dd>This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.</dd>
+		      </dl>
+
+            <h5>b) Inline Definitions</h5>
+
+            <dl class="lining">
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd class="micro">And it gets a definition too, which is this line</dd>
+				      <dd class="micro"> this is a 2<sup>nd</sup> definition for a single term.</dd>
+			      <dt><b>Term</b></dt>
+			      <dt><b>Other Defined Term</b></dt>
+				      <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+		      </dl>
+
+            <h5>c) Dictionary-style Definition</h5>
+
+            <dl class="dictionary-style">
+				   <dt><b>This is a term</b></dt>
+					   <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+					<dt><b>Another Term</b></dt>
+					   <dd>And it gets a definition too, which is this line</dd>
+					   <dd> this is a 2<sup>nd</sup> definition for a single term.</dd>
+					<dt><b>Term</b></dt>
+					<dt><b>Other Defined Term</b></dt>
+					   <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+				</dl>
+
+         </div>
+
+         <div class="four columns add-bottom">
+
+            <h3>Example Lists</h3>
+
+            <ol>
+				   <li>Here is an example</li>
+				   <li>of an ordered list</li>
+			   </ol>
+
+            <ul class="disc">
+				   <li>Here is an example</li>
+				   <li>of an unordered list</li>
+			   </ul>
+
+            <h3>Stats Tabs</h3>
+
+            <ul class="stats-tabs">
+			      <li><a href="#">1,234 <b>Sasuke</b></a></li>
+			      <li><a href="#">567 <b>Hinata</b></a></li>
+			      <li><a href="#">23,456 <b>Naruto</b></a></li>
+			      <li><a href="#">3,456 <b>Kiba</b></a></li>
+			      <li><a href="#">456 <b>Shikamaru</b></a></li>
+			      <li><a href="#">26 <b>Sakura</b></a></li>
+		      </ul>
+
+            <h3>Headers</h3>
+
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+
+            <hr>
+
+            <h3>button</h3>
+
+            <a class="button" href="#">This is a button</a>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="twelve columns add-bottom">
+
+            <h3 class="add-bottom">Pagination</h3>
+
+            <nav class="pagination add-bottom">
+
+               <span class="page-numbers prev inactive">Prev</span>
+   	         <span class="page-numbers current">1</span>
+   	         <a href="#" class="page-numbers">2</a>
+               <a href="#" class="page-numbers">3</a>
+               <a href="#" class="page-numbers">4</a>
+               <a href="#" class="page-numbers">5</a>
+               <a href="#" class="page-numbers">6</a>
+               <a href="#" class="page-numbers">7</a>
+               <a href="#" class="page-numbers">8</a>
+               <a href="#" class="page-numbers">9</a>
+   	         <a href="#" class="page-numbers next">Next</a>
+
+		      </nav>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <!--
+      <div class="row add-bottom">
+
+         <div class="twelve columns add-bottom">
+
+            <h3>Form Styles</h3>
+
+            <form>
+               <fieldset>
+
+					   <label for="regularInput">Regular Input</label>
+						<input type="text" id="regularInput">
+
+                  <label for="regularTextarea">Regular Textarea</label>
+						<textarea id="regularTextarea"></textarea>
+
+                  <label for="selectList">Select List</label>
+						<select id="selectList">
+						   <option value="Option 1">Option 1</option>
+							<option value="Option 2">Option 2</option>
+							<option value="Option 3">Option 3</option>
+							<option value="Option 4">Option 4</option>
+						</select>
+
+                  <fieldset>
+						   <legend>Checkboxes</legend>
+
+                     <label for="regularCheckbox">
+							   <input type="checkbox" value="checkbox 1" id="regularCheckbox">
+								<span>Regular Checkbox</span>
+							</label>
+
+                     <label for="secondRegularCheckbox">
+							   <input type="checkbox" value="checkbox 2" id="secondRegularCheckbox">
+								<span>Regular Checkbox</span>
+							</label>
+						</fieldset>
+
+						<fieldset>
+						   <legend>Radio Buttons</legend>
+
+                     <label for="regularRadio">
+							   <input type="radio" value="radio 1" id="regularRadio" name="radios">
+							   <span>Regular Radio</span>
+							</label>
+
+                     <label for="secondRegularRadio">
+							   <input type="radio" value="radio 2" id="secondRegularRadio" name="radios">
+								<span>Regular Radio</span>
+							</label>
+						</fieldset>
+
+						<button type="submit">Submit Form</button>
+
+               </fieldset>
+				</form>
+
+         </div>
+
+         <hr />
+
+      </div>
+      -->
+
+
       <div class="row">
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Quick TurnAround</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Friendly Support</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
-            <h3 class="animated fadeInUp wow">top Security</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Service-->
 
-<section id="work_outer"><!--main-section-start-->
-<div class="top_cont_latest">
-  <div class="container">
-    <h2>Latest Work</h2>
-    <div class="work_section">
+         <div class="twelve columns">
+            <h3 class="half-bottom">Columns</h3>
+         </div>
+
+      </div> <!-- Row End-->
+
+      <!--<h4>1/3 Columns</h4>  -->
+
       <div class="row">
-        <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-doc"></i> </div>
-            <div class="service-list-col2">
-              <h3>Process Walkthrough</h3>
-              <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-comment"></i> </div>
-            <div class="service-list-col2">
-              <h3>24/7 support</h3>
-              <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-database"></i> </div>
-            <div class="service-list-col2">
-              <h3>Hosting & Storage</h3>
-              <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-cog"></i> </div>
-            <div class="service-list-col2">
-              <h3>Customization options</h3>
-              <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
-            </div>
-          </div>
-          <div class="work_bottom"> <span>Ready to take the plunge?</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>
-        </div>
-        <figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
-      </div>
-    </div>
-  </div>
-  <!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
-  </div>
-</section>
-<!--main-section-end--> 
 
-<!--new_portfolio--> 
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
 
-<!-- Portfolio -->
-<section id="Portfolio" class="content"> 
-  
-  <!-- Container -->
-  <div class="container portfolio-title"> 
-    
-    <!-- Section Title -->
-    <div class="section-title">
-      <h2>Portfolio</h2>
-    </div>
-    <!--/Section Title --> 
-    
-  </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
-  
-  <!-- Portfolio Plus Filters -->
-  <div class="portfolio"> 
-    
-    <!-- Portfolio Filters -->
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".branding">
-          <h5>Branding</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".design">
-          <h5>Design</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".photography">
-          <h5>Photography</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".videography">
-          <h5>Videography</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".web">
-          <h5>Web</h5>
-          </a></li>
-      </ul>
-    </div>
-    <!--/Portfolio Filters --> 
-    
-    <!-- Portfolio Wrap -->
-    <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap"> 
-      
-      <!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>
-        <a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio2.jpg">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Leica Camera</h4>
-            <p class="project-categories">Videography</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  --> 
-      
-      <!-- Portfolio Item Video Expander  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-video-expander.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Foto Template</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Video Expander  --> 
-      
-      <!-- Portfolio Item Normal Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-1.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Sony Phone</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Normal Expander --> 
-      
-      <!-- Portfolio Item FullScreen Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-1.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Nike Shoes</h4>
-            <p class="project-categories">Photography, Web, Branding</p>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Item FullScreen Expander --> 
-      
-      <!-- Portfolio Item FullScreen Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-2.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Vinyl Record</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item FullScreen Expander --> 
-      
-      <!-- Portfolio Item Normal Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">iPhone</h4>
-            <p class="project-categories">Web</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Normal Expander --> 
-      
-      <!-- Portfolio Item External Project  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-        <a href="http://clapat.ro/themes/newave/project-external-1.html" class="external">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Nexus Phone</h4>
-            <p class="project-categories">Design, Web</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item External Project  --> 
-      
-      <!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   photography isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-        <a title="Stereo Headphones" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio8.jpg">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Art Frame</h4>
-            <p class="project-categories">Photography</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  --> 
-      
-    </div>
-    <!--/Portfolio Wrap --> 
-    
-  </div>
-  <!--/Portfolio Plus Filters -->
-  
-  <div class="portfolio-bottom"></div>
-  
-  <!-- Project Page Holder-->
-  <div id="project-page-holder">
-    <div class="clear"></div>
-    <div id="project-page-data"></div>
-  </div>
-  <!--/Project Page Holder--> 
-  
-</section>
-<!--/Portfolio --> 
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
 
-<!--new_portfolio--> 
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
 
-<!--
-<section class="main-section paddind" id="Portfolio">
-	<div class="container">
-    	<h2>Portfolio</h2>
-    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
-	</div>
-    
-    
-</section>   
+      </div>
 
--->
+      <!--<h4>1/4 Columns</h4>  -->
 
-<section class="main-section" id="client_outer"><!--main-section client-part-start-->
-  <h2>Happy Clients</h2>
-  <div class="client_area ">
-    <div class="client_section animated  fadeInUp wow">
-      <div class="client_profile">
-        <div class="client_profile_pic"><img src="img/client-pic1.jpg" alt=""></div>
-        <h3>Saul Goodman</h3>
-        <span>Lawless Inc</span> </div>
-      <div class="quote_section">
-        <div class="quote_arrow"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="client_section animated  fadeInDown wow">
-      <div class="client_profile flt">
-        <div class="client_profile_pic"><img src="img/client-pic2.jpg" alt=""></div>
-        <h3>Marie Schrader</h3>
-        <span>DEA Foundation</span> </div>
-      <div class="quote_section flt">
-        <div class="quote_arrow2"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</section>
-<!--main-section client-part-end-->
-
-<div class="c-logo-part"><!--c-logo-part-start-->
-  <div class="container">
-    <ul class="delay-06s animated  bounce wow">
-      <li><a href="javascript:void(0)"><img src="img/c-liogo1.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo2.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo3.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo5.png" alt=""></a></li>
-    </ul>
-  </div>
-</div>
-<!--c-logo-part-end-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-  <div class="container">
-    <h2>Amazing Team</h2>
-    <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-    <div class="team-leader-block clearfix">
-      <div class="team-leader-box">
-        <div class="team-leader wow fadeInDown delay-03s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team-leader-pic1.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-        <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-        <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-      <div class="team-leader-box">
-        <div class="team-leader  wow fadeInDown delay-06s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team-leader-pic2.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-        <span class="wow fadeInDown delay-06s">Product Manager</span>
-        <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-      <div class="team-leader-box">
-        <div class="team-leader wow fadeInDown delay-09s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/team-leader-pic3.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-        <span class="wow fadeInDown delay-09s">Accountant</span>
-        <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!--main-section team-end-->
-
-<section class="twitter-feed"><!--twitter-feed-->
-  <div class="container  animated fadeInDown delay-07s wow">
-    <div class="twitter_bird"><span><i class="fa-twitter"></i></span></div>
-    <p> When you're the underdog, your only option is to make #waves if you want to succeed. How much <br>
-      and how often should you be drinking coffee?</p>
-    <span>About 28 mins ago</span> </div>
-</section>
-<!--twitter-feed-end-->
-<footer class="footer_section" id="contact">
-  <div class="container">
-    <section class="main-section contact" id="contact">
-      <div class="contact_section">
-        <h2>Contact Us</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon rollIn animated wow"><span><i class="fa-home"></i></span></div>
-              <span> 308 Negra Arroyo Lane, <br>
-              Albuquerque, NM, 87104 </span> </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon icon2 rollIn animated wow"><span><i class="fa-phone"></i></span></div>
-              <span> 1-800-BOO-YAHH </span> </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa-pencil"></i></span></div>
-              <span> <a href="mailto:hello@butterfly.com"> hello@butterfly.com</a> </span> </div>
-          </div>
-        </div>
-      </div>
       <div class="row">
-        <div class="col-lg-6 wow fadeInLeft">
-          <div class="contact-info-box address clearfix">
-            <h3>Don’t be shy. Say hello!</h3>
-            <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
-            <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquampor id.</p>
-          </div>
-          <ul class="social-link">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
-            <li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6 wow fadeInUp delay-06s">
-          <div class="form">
-            <input class="input-text animated wow flipInY delay-02s" type="text" name="" value="Your Name *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text animated wow flipInY delay-04s" type="text" name="" value="Your E-mail *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-            <input class="input-btn animated wow flipInY delay-08s" type="submit" value="send message">
-          </div>
-        </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
       </div>
-    </section>
-  </div>
-  <div class="container">
-    <div class="footer_bottom"> <span>Copyright © 2014 Butterfly Theme By <a href="http://w3goods.com">W3Goods</a>. </span> </div>
-  </div>
-</footer>
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#header_outer').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
-    });
-</script> 
-<script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100
-      }
-    );
-    wow.init();
-    document.getElementById('').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'wow fadeInDown';
-	  section.className = 'wow shake';
-	  section.className = 'wow zoomIn';
-	  section.className = 'wow lightSpeedIn';
-      this.parentNode.insertBefore(section, this);
-    };
-  </script> 
-<script type="text/javascript">
-	$(window).load(function(){
-		
-		$('a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 91
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script> 
 
-<!--<script type="text/javascript">
+      <!--<h4>1/2 Columns</h4>  -->
 
-$(window).load(function(){
-  
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 350,
-      columns = null;
+      <div class="row">
 
-  
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
-         });
-         return false;
-    });
-  
-});
+         <div class="six columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
 
-</script>
+         <div class="six columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
+
+      </div>
+
+      <!--<h4>2/3 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="eight columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.</p>
+         </div>
+
+         <div class="four columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
+
+      </div>
+
+      <!--<h4>3/4 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at. </p>
+	      </div>
+
+         <div class="nine columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.</p>
+	      </div>
+
+      </div>
+
+   </section> <!-- Resume Section End-->
 
 
---> 
+   <!-- footer
+   ================================================== -->
+   <footer>
 
-<script type="text/javascript">
+      <div class="row">
 
-   
-  jQuery(document).ready(function($){     
-// Portfolio Isotope
-	var container = $('#portfolio-wrap');	
-	
+         <div class="twelve columns">
 
-	container.isotope({
-		animationEngine : 'best-available',
-	  	animationOptions: {
-	     	duration: 200,
-	     	queue: false
-	   	},
-		layoutMode: 'fitRows'
-	});	
+            <ul class="social-links">
+               <li><a href="https://github.com/justincoon" target="_blank"><i class="fa fa-github"></i></a></li>
+               <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
+            </ul>
 
-	$('#filters a').click(function(){
-		$('#filters a').removeClass('active');
-		$(this).addClass('active');
-		var selector = $(this).attr('data-filter');
-	  	container.isotope({ filter: selector });
-        setProjects();		
-	  	return false;
-	});
-		
-		
-		function splitColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = 1;
-			
-			
-			if (winWidth > 1024) {
-				columnNumb = 4;
-			} else if (winWidth > 900) {
-				columnNumb = 2;
-			} else if (winWidth > 479) {
-				columnNumb = 2;
-			} else if (winWidth < 479) {
-				columnNumb = 1;
-			}
-			
-			return columnNumb;
-		}		
-		
-		function setColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = splitColumns(), 
-				postWidth = Math.floor(winWidth / columnNumb);
-			
-			container.find('.portfolio-item').each(function () { 
-				$(this).css( { 
-					width : postWidth + 'px' 
-				});
-			});
-		}		
-		
-		function setProjects() { 
-			setColumns();
-			container.isotope('reLayout');
-		}		
-		
-		container.imagesLoaded(function () { 
-			setColumns();
-		});
-		
-	
-		$(window).bind('resize', function () { 
-			setProjects();			
-		});
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
 
-});
-$( window ).load(function() {
-	jQuery('#all').click();
-	return false;
-});
-</script>
+         </div>
+
+         <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/spin.js"></script>
+
+   <script src="js/init.js"></script>
+
 </body>
+
 </html>
